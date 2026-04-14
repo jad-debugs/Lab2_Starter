@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Study planner app</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Meeting minutes for a sample SWE team brainstorming session.">
+    <link rel="icon" href="media/favicon.ico">
+  </head>
+  <body>
+    <header>
+        <h1>Study planner app</h1>
+        <p>Sample meeting minutes for the team planning session.</p>
+        <nav>
+        <ul>
+            <li><a href="#attendance">Attendance</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#unfinished">Unfinished Business</a></li>
+            <li><a href="#new">New Business</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#form">Feedback Form</a></li>
+        </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>Meeting Information</h2>
+            <h3>Date</h3>
+            <p>April 14, 2026</p>
+
+            <h3>Topic</h3>
+            <p>Brainstorming ideas for a Study planner app.</p>
+        </section>
+
+        <section id="attendance">
+            <h2>Attendance</h2>
+            <ul>
+                <li><strong>Arteen</strong></li>
+                <li><strong>Jad</strong></li>
+                <li><strong>Diego</strong></li>
+                <li><strong>David</strong></li>
+            </ul>
+        </section>
+
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <ol>
+                <li>Review last discussion</li>
+                <li>Discuss organization features</li>
+                <li>Talk about notifications</li>
+                <li>Plan next steps</li>
+            </ol>
+        </section>
+        <section id="unfinished">
+            <h2>Unfinished Business</h2>
+            <p>We still need to decide whether the organization should support <em>custom study calender</em> or just have access to a google calender</p>
+        </section>
+        <section id="new">
+            <h2>New Business</h2>
+            <p>The team proposed adding a <b>task list</b>, a <strong>focus mode</strong>, and optional <i>ambient sound</i> support.</p>
+            <p>One member emphasized that accessibility is <em>especially important</em> for the final design.</p>
+        </section>
+
+        <section>
+            <h2>Miscellaneous Comments, Questions, and Concerns</h2>
+            <p>Question: Should the app save study history?</p>
+            <p>Concern: Some users may find sound alerts distracting.<br>We may want a silent mode option.</p>
+        </section>
+
+        <section>
+            <h2>Team Notes</h2>
+            <div>
+                <p>The <span>design team</span> will mock up the timer screen before the next meeting to keep track of hours studied.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Team Notes</h2>
+            <div>
+                <p>The <span>design team</span> will mock up the timer screen to keep track of studied hours before the next meeting.</p>
+            </div>
+        </section>
+
+        <section id="media">
+            <h2>Images and Diagrams</h2>
+            <p>Below are sketches from our brainstorming session.</p>
+
+            <img src="media/diagram.jpg" alt="Sketch of study planner app layout">
+        </section>
+        
+        <section>
+            <h2>Meeting Recordings</h2>
+
+
+            <h3>Audio Recording</h3>
+            <audio controls>
+                <source src="media/meeting-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Video Recording</h3>
+            <video controls width="320">
+                <source src="media/meeting-video.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+
+        </section>
+
+        <section>
+            <h2>Extra Notes</h2>
+            <details>
+                <summary>Click to view brainstorming details</summary>
+                <p>The team discussed whether the app should support short breaks, long breaks, and customizable themes in a future version.</p>
+            </details>
+        </section>
+
+
+        <section id="form">
+            <h2>Feedback Form</h2>
+
+            <form>
+                <fieldset>
+                <legend>Meeting Feedback</legend>
+
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </p>
+
+                <p>
+                    <label for="meeting-date">Meeting Date:</label>
+                    <input type="date" id="meeting-date" name="meeting-date">
+                </p>
+
+                <p>Would you attend this meeting again?</p>
+                <input type="radio" id="attend-yes" name="attend-again" value="yes">
+                <label for="attend-yes">Yes</label>
+
+                <input type="radio" id="attend-no" name="attend-again" value="no">
+                <label for="attend-no">No</label>
+
+                <p>Which topics interested you?</p>
+                <input type="checkbox" id="timer" name="topics" value="timer">
+                <label for="timer">Timer Design</label>
+
+                <input type="checkbox" id="tasks" name="topics" value="tasks">
+                <label for="tasks">Task List</label>
+
+                <input type="checkbox" id="notifications" name="topics" value="notifications">
+                <label for="notifications">Notifications</label>
+
+                <p>
+                    <label for="role">Choose your team role:</label>
+                    <input list="roles" id="role" name="role">
+                    <datalist id="roles">
+                    <option value="Developer"></option>
+                    <option value="Designer"></option>
+                    <option value="Project Manager"></option>
+                    <option value="Tester"></option>
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="priority">What feature should be prioritized next?</label>
+                    <select id="priority" name="priority">
+                    <option value="timer">Timer</option>
+                    <option value="tasks">Task List</option>
+                    <option value="history">History</option>
+                    <option value="sound">Sound</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="comments">Additional comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+                </p>
+
+                <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>Study planner Meeting Notes for lab 2</p>
+    </footer>
+    </body>
+</html>
